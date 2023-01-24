@@ -1,0 +1,12 @@
+{
+    "name": "lincs-js-todo",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js",
+        "doc": "http-server ./presentation/"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "http-server": "^14.1.1"
+    }
+}

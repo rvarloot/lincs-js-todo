@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>To-Do List Presentation</title>
+
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/white.css">
+
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+        <style>
+            code:not(.hljs){
+                font-size: 38px;
+                color: darkblue;
+                font-style: normal;
+            }
+
+            .reveal blockquote, .reveal p {
+                width: 90%;
+                text-align: left;
+                margin: var(--r-block-margin) auto;
+            }
+
+            .reveal blockquote {
+                font-style: normal;
+                background: lightgray;
+                box-shadow: none;
+                padding: 0;
+            }
+
+            .reveal blockquote > p,
+            .reveal blockquote > pre {
+                width: calc(100% - 32px);
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+            
+            .reveal blockquote p:first-child,
+            .reveal blockquote pre:first-child {
+                display: block;
+                padding-top: var(--r-block-margin);
+            }
+            
+            .reveal blockquote p:last-child,
+            .reveal blockquote pre:last-child {
+                display: block;
+                padding-bottom: var(--r-block-margin);
+            }
+
+            .reveal ul {
+                width: calc(90% - 1em);
+            }
+
+            .reveal pre code {
+                max-height: none;
+            }
+
+            .reveal table td,
+            .reveal table th {
+                border: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section
+                    data-markdown="presentation.md"
+                    data-separator="^\r?\n---\r?\n$"
+                    data-separator-vertical="^\r?\n--\r?\n$">
+                </section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1440,
+                height: 810,
+                margin: 0.1,
+
+                hash: true,
+                plugins: [ RevealMarkdown, RevealHighlight ]
+            });
+        </script>
+    </body>
+</html>
